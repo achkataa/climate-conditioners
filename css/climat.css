@@ -76,7 +76,7 @@
     margin-left: 10px;
 }
 
-.char-list {
+.video {
     width: 100%;
     height: 300px;
 }
@@ -134,7 +134,7 @@ table.GeneratedTable {
         margin: 0 auto;
     }
 
-    .char-list {
+    .video {
         max-width: 550px;
     }
 
