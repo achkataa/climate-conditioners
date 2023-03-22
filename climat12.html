@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/climat.css">
+    <script src="https://kit.fontawesome.com/f50f339568.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="first">
+        <h1>ClimaFix</h1>
+        <img src="../images/logo.png" alt="logo">
+    </header>
+
+    <main>
+        <section class="slider">
+        
+            <div class="photo">
+                <img src="../images/klimatik-12/Климатик №12 (1).jpg" alt="">
+            </div>
+    
+            <div class="photo">
+                <img src="../images/klimatik-12/Климатик №12 (2).jpg" alt="">
+            </div>
+    
+            <div class="photo">
+                <img src="../images/klimatik-12/Климатик №12 (3).jpg" alt="">
+            </div>
+    
+            <div class="arrows">
+                <button class="arrow-left" onclick="plusDivs(-1)"><i class="fa-solid fa-arrow-left fa-2x"></i></button>
+                <button class="arrow-right" onclick="plusDivs(1)"><i class="fa-solid fa-arrow-right fa-2x"></i></button>
+            </div>
+        </section>
+
+        <section class="description">
+            <h1 class="model">Инверторен климатик DAIKIN FTXP60M COMFORA</h1>
+            <div class="contact">
+              <p class="price">3 672,00 лв.</p>
+              <a href="contact.html">Свържете се с нас</a>
+            </div>
+
+            <div class="characteristics">
+                <h2>Описание/Характеристики<i onclick="iconOnClick()" class="fa-solid fa-caret-down"></i></h2>
+                <ul class="char-list">
+                    <li>Хладилният агент R32 не оказва вредно влияние на околната среда и осигурява по-висока енергийна ефективност.</li>
+                    <li>Филтърът от титанов апатит отстранява неприятните миризми и предотвратява разпространението на бактерии, микроби и други замърсители.</li>
+                    <li>Висока ефективност за цялата гама както за отопление, така и за охлаждане.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+
+<article class="table">
+  <table class="GeneratedTable">
+      <tbody>
+        <tr>
+          <td>Производител:</td>
+          <td>DAIKIN</td>
+        </tr>
+        <tr>
+          <td>За помещения:</td>
+          <td>от 40 до 50 кв.м.</td>
+        </tr>
+        <tr>
+          <td>Препоръчителен обем (охлаждане):</td>
+          <td>140 куб.м.</td>
+        </tr>
+        <tr>
+          <td>Препоръчителен обем (отопление):</td>
+          <td>125 куб.м.</td>
+        </tr>
+        <tr>
+          <td>Отдавана мощност (охлаждане):</td>
+          <td>1.70 - 6.00 - 7.00 kW</td>
+        </tr>
+        <tr>
+          <td>Отдавана мощност (отопление):</td>
+          <td>1.70 - 7.00 - 8.00 kW</td>
+        </tr>
+        <tr>
+          <td>Консумирана мощност (охлаждане):</td>
+          <td>1.82 kW</td>
+        </tr>
+        <tr>
+          <td>Консумирана мощност (отопление):</td>
+          <td>1.93 kW</td>
+        </tr>
+        <tr>
+          <td>Захранващо напрежение:</td>
+          <td>220 - 240 V~ 50 Hz, 1 Ph</td>
+        </tr>
+        <tr>
+          <td>Шум (вътрешно тяло):</td>
+          <td>33 dB</td>
+        </tr>
+        <tr>
+          <td>Шум (външно тяло):</td>
+          <td>49 dB</td>
+        </tr>
+        <tr>
+          <td>Размери Ш х В х Д (вътрешно тяло):</td>
+          <td>990 x 295 x 263 мм</td>
+        </tr>
+        <tr>
+          <td>Размери Ш х В х Д (външно тяло):</td>
+          <td>825 x 735 x 300 мм</td>
+        </tr>
+        <tr>
+          <td>Тегло (вътрешно тяло):</td>
+          <td>13.5 кг.</td>
+        </tr>
+        <tr>
+          <td>Тегло (външно тяло):</td>
+          <td>47 кг.</td>
+        </tr>
+        <tr>
+          <td>Хладилен агент:</td>
+          <td>R410A</td>
+        </tr>
+        <tr>
+          <td>Произход:</td>
+          <td>Чехия</td>
+        </tr>
+      </tbody>
+    </table>
+</article>
+    
+    
+    </main>
+
+    <footer>
+      <p>ClimaFix 2023 &copy; All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("photo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        function iconOnClick() {
+            let charList = document.querySelector('.char-list');
+            charList.classList.toggle('hide')
+        }
+
+    </script>
+    
+</body>
+</html>

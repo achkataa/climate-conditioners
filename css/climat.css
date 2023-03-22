@@ -34,6 +34,28 @@
     padding: 20px;
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact a {
+    text-decoration: none;
+    background-color: #cc0000;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contact a:hover {
+    /* color: #cc0000;
+    background-color: white; */
+    text-decoration: underline;
+}
+
 .description .price {
     font-size: 30px;
     color: #cc0000;
@@ -60,6 +82,27 @@
 }
 
 
+table.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #5271ff;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #5271ff;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  table.GeneratedTable thead {
+    background-color: #5271ff;
+  }
+
 @media (min-width: 700px) {
     /* .slider .photo {
         width: 400px;
@@ -73,6 +116,18 @@
     .description .price {
         font-size: 42px;
     }
+
+    table.GeneratedTable {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .description {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
