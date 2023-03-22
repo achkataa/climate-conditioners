@@ -74,6 +74,11 @@
     margin-left: 10px;
 }
 
+.char-list {
+    width: 100%;
+    height: 300px;
+}
+
 .hide {
     display: none;
 }
@@ -125,6 +130,10 @@ table.GeneratedTable {
     .description {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .char-list {
+        max-width: 550px;
     }
 
 
